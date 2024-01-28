@@ -22,7 +22,7 @@ function EditProfile() {
       (ageInputRef.current.value = storeObj.loginReducer.loginDetails.age),
       (emailInputRef.current.value = storeObj.loginReducer.loginDetails.email),
       setProfilePic(
-        `http://localhost:3456/${storeObj.loginReducer.loginDetails.profilePic}`
+        `/${storeObj.loginReducer.loginDetails.profilePic}`
       ))
     ) {
     } else {
@@ -55,7 +55,7 @@ function EditProfile() {
       body: dataToSend,
     };
 
-    let JSONData = await fetch("http://localhost:3456/updateProfile", reqOptions);
+    let JSONData = await fetch("/updateProfile", reqOptions);
 
     let JSOData = await JSONData.json();
 

@@ -28,7 +28,7 @@ function Login() {
       body: dataToSend,
     };
 
-    let JSONData = await fetch("http://localhost:3456/validateToken", reqOptions);
+    let JSONData = await fetch("/validateToken", reqOptions);
 
     let JSOData = await JSONData.json();
 
@@ -57,7 +57,7 @@ function Login() {
       body: dataToSend, 
     };
 
-    let JSONData = await fetch("http://localhost:3456/login", reqOptions);
+    let JSONData = await fetch("/login", reqOptions);
 
     let JSOData = await JSONData.json();
 
@@ -92,7 +92,7 @@ function Login() {
       body: dataToSend,
     };
 
-    let JSONData = await fetch("http://localhost:3456/login", reqOptions);
+    let JSONData = await fetch("/login", reqOptions);
 
     let JSOData = await JSONData.json();
 
