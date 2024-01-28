@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+form{
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px;
+  background-color: aquamarine; 
+}
+form label{
+  display: inline-block;
+  width: 100px;
+  padding: 12px;
+}
+.profilePic{
+  width: 120px;
+  height: 120px;
+  border: 2px solid black;
+  border-radius: 90px;
+  box-shadow: 3px 3px 30px darkslategrey;
+}
+form div{
+margin: 10px;
+}
+a{
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+nav{
+  background-color:#124d6a;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 31px;
+}
+.navlink{
+  color: aliceblue;
+}
+.home{
+  margin: 90px;
+  width: 250px;
+  text-align: center;
+}
+.userPic{
+  background-color:aliceblue;
+  width: 250px;
+  height: 250px;
+  /* border: 3px double whitesmoke; */
+  border: 4px #f5f6fa solid;
+  border-radius: 150px;
+  /* box-shadow: 10px 10px 10px grey; */
+  box-shadow: 3px 3px 30px grey;
+  box-sizing: border-box;
+  /* color: #124d6a; */
+}
+
+.effect{
+  border: 2px solid black;
+  text-align: center;
+  display: inline-block;
+  padding: 10px;
+  background-color:rgb(172, 105, 235);
+}
