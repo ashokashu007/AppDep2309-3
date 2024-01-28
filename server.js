@@ -203,8 +203,10 @@ let userSchema = new mongoose.Schema({
 
 let User = new mongoose.model("user5", userSchema);
 
+connectToMDB();
+
 app.listen(process.env.port, (req, res) => {
   console.log(`Listening to port ${process.env.port}`);
 });
 
-connectToMDB();
+
